@@ -4,6 +4,8 @@ machine:
   dependencies:
     override:
       - bundle install
+  services:
+    - elasticsearch
   test:
     override:
       - bundle rxec rake spec
