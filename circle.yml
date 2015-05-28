@@ -1,0 +1,10 @@
+machine:
+  ruby:
+    version: 2.2.0
+  dependencies:
+    override:
+      - bundle install
+  test:
+    override:
+      - bundle rxec rake spec
+      
